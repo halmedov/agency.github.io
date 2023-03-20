@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import AboutUsSection from './components/About';
+import ChatBot from './components/Chat';
+import ContactSection from './components/Contact';
+import CtaSection from './components/Cta';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import Services from './components/Services';
+import SkillsSection from './components/Skills';
+import WhyUsSection from './components/WhyUs'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      <HeroSection/>
+      <AboutUsSection/>
+      <WhyUsSection />
+      <SkillsSection/>
+      <Services/>
+      <CtaSection/>
+      <ContactSection/>
+      <Footer/>
+      
+    </>
+      
   );
 }
+
+
 
 export default App;
